@@ -1,0 +1,222 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    --bleu1: #192a56;
+    --bleu2: #273c75;
+    --jaune: #e1b12c;
+}
+
+                                                            /* HEADER / NAV */
+
+header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(25, 42, 86, 0.6);
+    display: flex;
+    box-shadow: 0 4px 4px #000;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 10%;
+    height: 90%;
+    /* border: 1px solid #fff; */
+    padding-left: 20px;
+}
+
+.bouton {
+    width: 30px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.span1 {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: O;
+    background-color: #fff;
+    transition-duration: 0.3s;
+}
+
+.rotateRight {
+    transform: rotate(45deg);
+    top: 12px;
+}
+
+.span2 {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 13px;
+    background-color: #fff;
+    transition-duration: 0.3s;
+}
+
+.rotateLeft {
+    transform: rotate(-45deg);
+}
+
+.span3 {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    transition-duration: 0.3s;
+}
+
+.off {
+    display: none;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    /* border: 1px solid #fff; */
+}
+
+.nav2 a {
+    /* border: 1px solid #fff; */
+    padding: 5px;
+    margin: 0 10px 0 10px;
+}
+
+.nav2 a:hover {
+    color: var(--jaune);
+}
+
+.nav3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 10%;
+    height: 90%;
+    /* border: 1px solid #fff; */
+    padding-right: 10px;
+}
+
+.nav3 a {
+    /* border: 1px solid #fff; */
+    padding: 5px;
+}
+
+.nav3 a:hover {
+    color: var(--jaune);
+}
+
+.nav-mobile {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(25, 42, 86, 0.6);
+    transition-duration: 0.3s;
+    margin-left: -250px;
+}
+
+.nav-open {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(25, 42, 86, 0.6);
+    transition-duration: 0.3s;
+    margin-left: 0;
+    z-index: 2;
+}
+
+.nav-mobile1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+.nav-mobile2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.nav-mobile a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 0 10px 0;
+}
+
+.nav-mobile a:hover {
+    color: var(--jaune);
+}
+
+.nav-mobile3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+    nav {
+        justify-content: flex-start;
+    }
+    .bouton {
+        display: flex;
+    }
+    .nav2 {
+        display: none;
+    }
+    .nav3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+
+}
+
+                                                            /* MAIN */
+
+main {
+    background: linear-gradient(-225deg, rgba(25, 42, 86, 0.5) 30%, rgba(39, 60, 117, 0.6) 80%), url("../images/bubulles8.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
