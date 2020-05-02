@@ -27,8 +27,10 @@ Un site pour me présenter en 4 sections :
 
 * **2 Mai**
     * Refonte de l'écran d'accueil responsive.
+    * Ajout d'animations avec Animate On Scroll.
 
 # Outils
 
 * [Google Fonts](https://fonts.google.com/)
-* [FlatUiColors](https://flatuicolors.com/)
+* [Flat Ui Colors](https://flatuicolors.com/)
+* [Animate On Scroll](https://michalsnik.github.io/aos/)

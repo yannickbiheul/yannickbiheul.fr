@@ -208,7 +208,7 @@ main {
     background: linear-gradient(-225deg, rgba(25, 42, 86, 0.5) 30%, rgba(39, 60, 117, 0.6) 80%), url("../images/bubulles8.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
