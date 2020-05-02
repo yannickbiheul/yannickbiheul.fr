@@ -15,22 +15,19 @@
 <body>
     <?php include('header.php'); ?>
 
-    <section id="main">
-        <section id="main1">
-            <div class="nom">
+    <main id="main">
+        <section class="container">
+            <div class="box1">
                 <h1>Yannick Biheul</h1>
+                <p>Reconversion professionnelle dans le développement web</p>
+                <div class="liens">
+                    <a href="#">CV</a>
+                    <a href="#">GitHub</a>
+                </div>
             </div>
-            <div class="phrase">
-                <p>Développement web</p>
+            <div class="box2">
+                <img src="images/web5.png" alt="Web">
             </div>
-            <div class="liens">
-                <a href="">CV</a>
-                <a href="#">GitHub</a>
-            </div>   
-        </section>
-
-        <section id="main2">
-            <img src="images/web5.png" alt="Web">
         </section>
     </main>
 
