@@ -29,6 +29,9 @@ Un site pour me présenter en 4 sections :
     * Refonte de l'écran d'accueil responsive.
     * Ajout d'animations avec Animate On Scroll.
 
+* **3 Mai**
+    * Initialisation du Footer.
+
 # Outils
 
 * [Google Fonts](https://fonts.google.com/)
