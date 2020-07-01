@@ -88,7 +88,7 @@ nav a {
 /* MAIN */
 
 #main {
-    background: linear-gradient(-225deg, rgba(25, 42, 86, 0.5) 30%, rgba(39, 60, 117, 0.6) 80%), url("../images/bubulles8.jpg");
+    background: linear-gradient(-225deg, rgba(25, 42, 86, 0.5) 30%, rgba(39, 60, 117, 0.6) 80%), url("../images/laptop.jpg");
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -172,10 +172,38 @@ nav a {
     text-align: center;
 }
 
+.boutonTitre {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 75px;
+}
+
+.boutonTitre>a {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196F3;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+    font-size: 1.5em;
+}
+
+.boutonTitre>a:hover {
+    padding: 12px;
+    font-size: 1.6em;
+    box-shadow: 5px 5px 4px #000;
+}
+
 .sommaire2 {
     width: 100%;
     min-height: 40vh;
-    background: linear-gradient(110.51deg,#3223AE 0%,#F44336 95.05%);
+    background: linear-gradient(110.51deg,#3223AE 0%,#d0656f 95.05%);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -195,7 +223,7 @@ nav a {
     align-items: center;
     width: 150px;
     height: 40px;
-    margin: 10px 0 10px 0;
+    margin: 40px 0 10px 0;
 }
 
 .bouton>a {
@@ -204,6 +232,13 @@ nav a {
     background-color: #44bd32;
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+}
+
+.bouton>a:hover {
+    padding: 11px;
+    font-size: 1.1em;
+    box-shadow: 5px 5px 4px #000;
 }
 
 .sommaire2Image {
@@ -219,6 +254,11 @@ nav a {
     width: 300px;
     transform: rotate(5deg);
     box-shadow: 4px 4px 4px #000;
+}
+
+.sommaire2Image>img:hover {
+    width: 310px;
+    box-shadow: 5px 5px 4px #000;
 }
 
                                                             /* FOOTER */
@@ -275,7 +315,7 @@ footer {
 .reseaux>a {
     text-decoration: none;
     color: #000;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .footer2 p {
@@ -300,12 +340,12 @@ footer {
 
 .footer3 a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     margin-top: 40px;
 }
 
 .footer3 a:hover {
-    color: var(--jaune);
+    text-decoration: underline;
 }
 
 
@@ -329,6 +369,12 @@ footer {
     }
     .boutonBurger {
         display: flex;
+    }
+
+    .sommaire2 {
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 75vh;
     }
 
     footer {
