@@ -32,6 +32,9 @@ Un site pour me présenter en 4 sections :
 * **3 Mai**
     * Initialisation du Footer.
 
+* **01 Juillet**
+    * Initialisation du projet, je recommence tout à zéro.
+
 # Outils
 
 * [Google Fonts](https://fonts.google.com/)
