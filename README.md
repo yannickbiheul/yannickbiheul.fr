@@ -38,6 +38,7 @@ Un site pour me présenter en 4 sections :
 * **02 Juillet**
     * Construction de la page Présentation.
     * Ajout du menu Burger.
+    * Construction du CV.
 
 # Outils
 
