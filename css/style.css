@@ -8,6 +8,96 @@ html, body {
     --bleu-nuit2: #2a3357;
 }
 
+                                                            /* BOUTONS */
+
+.bouton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    margin: 40px 0 10px 0;
+}
+
+.bouton>a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #44bd32;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+}
+
+.bouton>a:hover {
+    padding: 11px;
+    font-size: 1.1em;
+    box-shadow: 5px 5px 4px #000;
+}
+
+.boutonTitre {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 75px;
+}
+
+.boutonTitre>a {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196F3;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+    font-size: 1.5em;
+}
+
+.boutonTitre>a:hover {
+    padding: 12px;
+    font-size: 1.6em;
+    box-shadow: 5px 5px 4px #000;
+}
+
+.boutonTitre2 {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 40px 20px 0 20px;
+}
+
+.boutonTitre2>a {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196F3;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+    font-size: 1em;
+}
+
+.boutonTitre2>a:hover {
+    padding: 12px;
+    font-size: 1.2em;
+    box-shadow: 5px 5px 4px #000;
+}
+
+.boutons {
+    height: 50px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
                                                             /* HEADER / NAV */
 
 header {
@@ -143,7 +233,7 @@ nav a {
     background: linear-gradient(-225deg, rgba(25, 42, 86, 0.5) 30%, rgba(39, 60, 117, 0.6) 80%), url("../images/monBureau.jpg");
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 95vh;
     padding-top: 60px;
     display: flex;
     justify-content: center;
@@ -224,62 +314,6 @@ nav a {
     text-align: center;
 }
 
-.boutonTitre {
-    /* border: 1px solid #000; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 75px;
-}
-
-.boutonTitre>a {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2196F3;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 4px 4px 4px #000;
-    font-size: 1.5em;
-}
-
-.boutonTitre>a:hover {
-    padding: 12px;
-    font-size: 1.6em;
-    box-shadow: 5px 5px 4px #000;
-}
-
-.boutonTitre2 {
-    /* border: 1px solid #000; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    margin-top: 40px;
-}
-
-.boutonTitre2>a {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2196F3;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 4px 4px 4px #000;
-    font-size: 1em;
-}
-
-.boutonTitre2>a:hover {
-    padding: 12px;
-    font-size: 1.2em;
-    box-shadow: 5px 5px 4px #000;
-}
-
 .sommaire2 {
     width: 100%;
     min-height: 40vh;
@@ -298,29 +332,7 @@ nav a {
     margin-right: 10px;
 }
 
-.bouton {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 150px;
-    height: 40px;
-    margin: 40px 0 10px 0;
-}
 
-.bouton>a {
-    color: #fff;
-    text-decoration: none;
-    background-color: #44bd32;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 4px 4px 4px #000;
-}
-
-.bouton>a:hover {
-    padding: 11px;
-    font-size: 1.1em;
-    box-shadow: 5px 5px 4px #000;
-}
 
 .sommaire2Image {
     width: 30%;
@@ -402,14 +414,31 @@ nav a {
     align-items: center;
 }
 
+#sectionDiplomes {
+    padding-bottom: 60px;
+}
+#sectionCertificats {
+    padding-bottom: 60px;
+}
+#sectionExperiences {
+    padding-bottom: 60px;
+}
+#sectionContact {
+    padding-bottom: 60px;
+}
+
 .titreSection {
-    width: 100%;
+    width: 75%;
     height: 75px;
-    background: linear-gradient(110.51deg,#3223AE 0%,#2f3640 95.05%);
+    background: linear-gradient(110.51deg,#353b48 0%,#2f3640 95.05%);
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #999;
+    margin-bottom: 40px;
 }
 
 #diplomes {
@@ -423,7 +452,7 @@ nav a {
 
 .diplome {
     width: 300px;
-    height: 400px;
+    min-height: 300px;
     /* border: 1px solid #000; */
     margin: 20px 20px 20px 20px;
 }
@@ -464,10 +493,51 @@ nav a {
 
 #certificats {
     min-height: 50vh;
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+#experiences {
+    width: 75%;
+    margin: auto;
+    min-height: 50vh;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.experience2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+#contact {
+    width: 75%;
+    margin: auto;
+    min-height: 50vh;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
