@@ -35,6 +35,9 @@ Un site pour me présenter en 4 sections :
 * **01 Juillet**
     * Initialisation du projet, je recommence tout à zéro.
 
+* **02 Juillet**
+    * Construction de la page Présentation.
+
 # Outils
 
 * [Google Fonts](https://fonts.google.com/)
