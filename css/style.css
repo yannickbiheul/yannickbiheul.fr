@@ -67,7 +67,7 @@ nav a {
     position: fixed;
     top: 13px;
     right: 10px;
-    z-index: 15;
+    z-index: 20;
     width: 30px;
     height: 30px;
     display: none;
@@ -82,6 +82,36 @@ nav a {
     background-color: #000;
     width: 100%;
     height: 4px;
+}
+
+.menuBurger {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 15;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuBurgerOpen {
+    left: 0;
+}
+
+.menuBurger>a {
+    text-decoration: none;
+    color: #000;
+    margin: 20px 0 20px 0;
+    font-size: 2.6em;
+}
+
+.menuBurger>a:hover {
+    text-decoration: underline;
 }
 
 
