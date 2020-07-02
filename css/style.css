@@ -362,6 +362,10 @@ nav a {
     margin: 20px 0 20px 0;
 }
 
+#titreReconversion {
+    margin-bottom: 40px;
+}
+
 .titreReconversion {
     width: 75%;
     height: 100px;
