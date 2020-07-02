@@ -211,6 +211,34 @@ nav a {
     box-shadow: 5px 5px 4px #000;
 }
 
+.boutonTitre2 {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.boutonTitre2>a {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196F3;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+    font-size: 1em;
+}
+
+.boutonTitre2>a:hover {
+    padding: 12px;
+    font-size: 1.2em;
+    box-shadow: 5px 5px 4px #000;
+}
+
 .sommaire2 {
     width: 100%;
     min-height: 40vh;
