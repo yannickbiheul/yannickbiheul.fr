@@ -87,7 +87,18 @@ nav a {
 
 /* MAIN */
 
-#main {
+#mainAccueil {
+    background: linear-gradient(-225deg, rgba(25, 42, 86, 0.5) 30%, rgba(39, 60, 117, 0.6) 80%), url("../images/laptop.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainPresentation {
     background: linear-gradient(-225deg, rgba(25, 42, 86, 0.5) 30%, rgba(39, 60, 117, 0.6) 80%), url("../images/laptop.jpg");
     background-size: cover;
     background-position: center;
@@ -261,6 +272,17 @@ nav a {
 .sommaire2Image>img:hover {
     width: 310px;
     box-shadow: 5px 5px 4px #000;
+}
+
+/* PRESENTATION1 */
+
+#presentation1 {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
                                                             /* FOOTER */
