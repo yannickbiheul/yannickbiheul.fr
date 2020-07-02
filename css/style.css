@@ -99,7 +99,7 @@ nav a {
 }
 
 #mainPresentation {
-    background: linear-gradient(-225deg, rgba(25, 42, 86, 0.5) 30%, rgba(39, 60, 117, 0.6) 80%), url("../images/laptop.jpg");
+    background: linear-gradient(-225deg, rgba(25, 42, 86, 0.5) 30%, rgba(39, 60, 117, 0.6) 80%), url("../images/quimper.jpg");
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -302,7 +302,7 @@ nav a {
     box-shadow: 5px 5px 4px #000;
 }
 
-/* PRESENTATION1 */
+                                                            /* PRESENTATION1 */
 
 #presentation1 {
     width: 100%;
@@ -334,6 +334,7 @@ nav a {
 
 .titreReconversion {
     width: 75%;
+    height: 100px;
     /* border: 1px solid #000; */
     display: flex;
     justify-content: center;
@@ -485,6 +486,10 @@ footer {
     }
     .containerTexte {
         width: 95%;
+    }
+    .titreReconversion {
+        width: 95%;
+        text-align: center;
     }
     .containerReconversion {
         width: 100%;
