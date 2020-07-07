@@ -10,69 +10,18 @@ html, body {
 
                                                             /* BOUTONS */
 
+
 .bouton {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 150px;
-    height: 40px;
-    margin: 40px 0 10px 0;
-}
-
-.bouton>a {
-    color: #fff;
-    text-decoration: none;
-    background-color: #44bd32;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 4px 4px 4px #000;
-}
-
-.bouton>a:hover {
-    padding: 11px;
-    font-size: 1.1em;
-    box-shadow: 5px 5px 4px #000;
-}
-
-.boutonTitre {
-    /* border: 1px solid #000; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 75px;
-}
-
-.boutonTitre>a {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2196F3;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 4px 4px 4px #000;
-    font-size: 1.5em;
-}
-
-.boutonTitre>a:hover {
-    padding: 12px;
-    font-size: 1.6em;
-    box-shadow: 5px 5px 4px #000;
-}
-
-.boutonTitre2 {
     /* border: 1px solid #000; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
     width: 200px;
-    margin: 40px 20px 0 20px;
+    /* margin: 40px 20px 0 20px; */
 }
 
-.boutonTitre2>a {
+.bouton>a {
     padding: 10px;
     width: 75%;
     display: flex;
@@ -83,37 +32,28 @@ html, body {
     color: #fff;
     border: 1px solid #fff;
     border-radius: 5px;
-    /* box-shadow: 0 0 20px #ccc; */
+    box-shadow: 0 0 20px #000;
     font-size: 1em;
     transition-duration: 0.3s;
 }
 
-.boutonTitre2>a:hover {
+.bouton>a:hover {
     background-color: #fff;
     color: #000;
-    box-shadow: 5px 5px 4px #000;
+    box-shadow: 0 0 20px #000;
     border: 1px solid #000;
 }
 
-.boutons {
-    height: 50px;
-    width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .titre {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 20px;
     left: 20px;
-    border: 1px solid #fff;
-    border-radius: 50%;
+    /* border: 1px solid #fff; */
     color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -121,25 +61,55 @@ html, body {
     z-index: 25;
 }
 
-.titre:hover {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
+.titreOpen {
+    justify-content: center;
 }
 
-.titreOpen {
+.span1 {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 4px;
     background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
+    transition-duration: 0.3s;
+}
+.span1Open {
+    transform: rotate(45deg);
+    top: 15px;
+}
+
+.span2 {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition-duration: 0.3s;
+}
+.span2Open {
+    display: none;
+}
+
+.span3 {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition-duration: 0.3s;
+}
+.span3Open {
+    transform: rotate(-45deg);
+    top: 15px;
 }
 
 .menuTitre {
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -50vw;
-    background-color: #fff;
+    left: -100vw;
+    background: linear-gradient(-225deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 80%);    
     z-index: 20;
     transition-duration: 0.3s;
     display: flex;
@@ -170,7 +140,7 @@ html, body {
 
 .menuTitre2>a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 1.8em;
     margin: 20px 0 20px 0;
 }
@@ -189,10 +159,41 @@ html, body {
     left: 0;
 }
 
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer1 {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer2 {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer3 {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
                                                             /* HEADER / NAV */
 
-header {
-    background: linear-gradient(-225deg, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.4) 80%), url("../images/fond-route.jpg");
+#accueil {
+    background: linear-gradient(-225deg, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.5) 80%), url("../images/fond-route.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -201,98 +202,64 @@ header {
     align-items: center;
 }
 
-nav {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: #000;
-}
-
-.nav1 {
-    width: 20%;
-}
-
-.nav1>a {
-    color: #000;
-    font-family: 'Bangers', sans-serif; 
-    font-size: 1.8em;
-    margin-left: 40px;
-}
-
-.nav2 {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav2>a {
-    margin: 0 20px 0 20px;
-}
-
-.nav2>a:hover {
-    text-decoration: underline;
-}
-
-.nav3 {
-    width: 20%;
-}
-
-.boutonBurger {
-    position: fixed;
-    top: 13px;
-    right: 10px;
-    z-index: 20;
-    width: 30px;
-    height: 30px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-    /* border: 1px solid #000; */
-}
-
-.boutonBurger>span {
-    background-color: #000;
-    width: 100%;
-    height: 4px;
-}
-
-.menuBurger {
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    z-index: 15;
+#presentation {
+    background: linear-gradient(-225deg, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.5) 80%), url("../images/quimper.jpg");
+    background-size: cover;
+    background-position: center;
     height: 100vh;
-    width: 100vw;
-    background-color: #fff;
-    transition-duration: 0.5s;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.menuBurgerOpen {
-    left: 0;
+.containerMain {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    /* border: 1px solid #fff; */
 }
 
-.menuBurger>a {
-    text-decoration: none;
-    color: #000;
-    margin: 20px 0 20px 0;
-    font-size: 2.6em;
+.containerMyName {
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.menuBurger>a:hover {
-    text-decoration: underline;
+.containerMyName>h1 {
+    font-size: 4em;
+}
+
+.containerMyProfession {
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.containerMyProfession>p {
+    margin-top: -10px;
+}
+
+.containerButton {
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
@@ -331,21 +298,8 @@ nav a {
     align-items: center;
 }
 
-.containerMain {
-    width: 90%;
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    /* border: 1px solid #fff; */
-}
 
-.containerMain>h1 {
-    font-size: 3em;
-}
+
 
                                                             /* SOMMAIRE */
 
@@ -361,7 +315,7 @@ nav a {
 }
 
 .containerSommaire {
-    width: 90%;
+    width: 50%;
     height: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -405,10 +359,17 @@ nav a {
     text-align: center;
 }
 
+.esTexte>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
 .sommaire2 {
     width: 100%;
     min-height: 40vh;
-    background: linear-gradient(110.51deg,#3223AE 0%,#d0656f 95.05%);
+    background: linear-gradient(110.51deg,#3223AE 0%,#2196F3 95.05%);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -485,15 +446,12 @@ nav a {
 }
 
 .titreReconversion {
-    width: 50%;
-    height: 100px;
+    padding: 10px;
     /* border: 1px solid #000; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 20px 0 20px 0;
-    box-shadow: 0 0 20px #999;
-    border-radius: 10px;
 }
 
 .containerReconversion {
@@ -632,92 +590,6 @@ nav a {
     align-items: center;
 }
 
-                                                            /* FOOTER */
-
-footer {
-    min-height: 20vh;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #000;
-}
-
-.footer1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid #fff; */
-    width: 33%;
-    height: 98%;
-}
-
-.footer1 a {
-    text-decoration: none;
-    color: #000;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.footer1 a:hover {
-    text-decoration: underline;
-}
-
-.footer2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    /* border: 1px solid #fff; */
-    width: 33%;
-    height: 98%;
-}
-
-.reseaux {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    width: 90%;
-    /* border: 1px solid #fff; */
-}
-
-.reseaux>a {
-    text-decoration: none;
-    color: #000;
-    font-size: 2.5em;
-}
-
-.footer2 p {
-    color: #000;
-}
-
-.footer3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid #fff; */
-    width: 33%;
-    height: 98%;
-}
-
-.footer3 p {
-    color: #000;
-    /* border: 1px solid #fff; */
-    margin-bottom: -10px;
-}
-
-.footer3 a {
-    text-decoration: none;
-    color: #000;
-    margin-top: 40px;
-}
-
-.footer3 a:hover {
-    text-decoration: underline;
-}
 
 
                                                             /* RESPONSIVE */
@@ -729,96 +601,46 @@ footer {
 
 /* 1024px */
 @media screen and (max-width: 1024px) {
-    .nav1 {
-        width: 80%;
+    .sommaire2Texte {
+        width: 75%;
+        text-align: center;
     }
-    .nav1>a {
-        font-size: 1.9em;
+
+    .sommaire2Texte>.bouton {
+        margin: auto;
     }
-    .nav2 {
+
+    .sommaire2Image {
         display: none;
     }
-    .boutonBurger {
-        display: flex;
-    }
 
-    .sommaire2 {
-        flex-direction: column;
-        justify-content: space-around;
-        min-height: 75vh;
-    }
-
-    .sommaire2Texte {
-        width: 90%;
-        text-align: center;
-    }
-    .bouton {
-        margin: auto;
-        margin-top: 40px;
-    }
-    .sommaire2Image {
-        width: 90%;
-    }
-
-    .containerPresentation1 {
-        width: 100%;
-    }
-    .containerTexte {
-        width: 95%;
-    }
-    .titreReconversion {
-        width: 95%;
-        text-align: center;
-    }
-    .containerReconversion {
-        width: 100%;
-    }
-    .reconversion1 {
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-    }
     .footer1 {
         display: none;
     }
+
     .footer2 {
-        height: 98%;
-        width: 75%;
+        width: 100%;
     }
-    .footer2>span {
-        margin-top: 20px;
-    }
-    .reseaux {
-        justify-content: center;
-    }
-    .reseaux a {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+
     .footer3 {
-        height: 50%;
-        width: 75%;
-    }
-    .footer3 a {
-        margin-bottom: 40px;
+        display: none;
     }
 }
 
 /* 600px */
 @media screen and (max-width: 600px) {
-    .menuTitre {
-        width: 100vw;
-        left: -100vw;
+    .containerMain {
+        width: 100%;
+        height: 90%;
     }
-    .menuTitreOpen {
-        left: 0;
+
+    .containerMyName>h1 {
+        font-size: 3em;
     }
-    .containerMain>h1 {
-        font-size: 2.5em;
+
+    .containerButton {
+        justify-content: center;
     }
-    .containerMain>p {
-        font-size: 0.9em;
-    }
+
+    
 }
