@@ -3,150 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yannick Biheul</title>
-    <!-- CSS -->
+    <title>Yannick Biheul | Apprentissage du développement web pour une reconversion professionnelle.</title>
+    <meta name="description" content="Reconversion professionnelle : de pilote de production à développeur web Front-End JavaScript, apprentissage des langages HTML, CSS, JavaScript, PHP, MySQL.">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- POLICES -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/29ef46100e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    
-    <!-- HEADER / NAV -->
+
+    <div class="boutonBurger">
+        <span class="span1"></span>
+        <span class="span2"></span>
+        <span class="span3"></span>
+    </div>
+
+    <div class="menuBurger">
+        <a href="#" class="boutonAccueil">Accueil</a>
+        <a href="#" class="boutonPresentation">Présentation</a>
+        <a href="#" class="boutonPortfolio">Portfolio</a>
+        <a href="#" class="boutonContact">Contact</a>
+    </div>
 
     <header>
         <nav>
-            <div class="nav1">
-                <a href="index.html">Yannick Biheul</a>
-            </div>
-            <div class="nav2">
-                <a href="presentation.html">Présentation</a>
-                <a href="#">Sites</a>
-                <a href="#">Jeux</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="nav3">
-
-            </div>
+            <a href="#">Accueil</a>
+            <a href="#">Présentation</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
 
-    <div class="boutonBurger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="menuBurger">
-        <a href="index.html">Accueil</a>
-        <a href="presentation.html.html">Présentation</a>
-        <a href="#">Sites</a>
-        <a href="#">Jeux</a>
-        <a href="#">Contact</a>
-    </div>
-
-    <!-- MAIN -->
-
-    <main id="mainAccueil">
-        <section class="containerMain">
-            <h1>Reconversion Professionnelle</h1>
-            <p>Pilote de production > Développeur Web</p>
-            <div class="boutonTitre2">
-                <a href="cv.html">Mon CV</a>
+    <main>
+        <section id="accueil">
+            <h1 data-aos="zoom-in" data-aos-duration="2000">Yannick Biheul</h1>
+            <p data-aos="fade-up" data-aos-duration="2000">
+                Reconversion professionnelle <br>Pilote de production > Développeur Web.
+            </p>
+            <div class="bouton">
+                <a href="#" data-aos="fade-up-right" data-aos-duration="2000">BOUTON</a>
             </div>
         </section>
     </main>
 
-    <!-- SOMMAIRE -->
-
-    <section class="sommaire">
-        <div class="containerSommaire">
-            <div class="elementSommaire">
-                <div class="esImage">
-                    <a href="#"><i class="far fa-id-card"></i></a>
-                </div>
-                <div class="esTexte">
-                    <div class="boutonTitre">
-                        <a href="presentation.html">Présentation</a>
-                    </div>
-                    <p>Qui je suis, d'où je viens, quel est mon parcours, etc...</p>
-                </div>
-            </div>
-            <div class="elementSommaire">
-                <div class="esImage">
-                    <a href="#"><i class="fas fa-desktop"></i></a>
-                </div>
-                <div class="esTexte">
-                    <div class="boutonTitre">
-                        <a href="#">Sites</a>
-                    </div>
-                    <p>Les sites créés pendant mes cours et mes projets perso.</p>
-                </div>
-            </div>
-            <div class="elementSommaire">
-                <div class="esImage">
-                    <a href="#"><i class="fas fa-gamepad"></i></a>
-                </div>
-                <div class="esTexte">
-                    <div class="boutonTitre">
-                        <a href="#">Jeux</a>
-                    </div>
-                    <p>Des petits jeux pour apprendre le JavaScript.</p>
-                </div>
-            </div>
-            <div class="elementSommaire">
-                <div class="esImage">
-                    <a href="#"><i class="fas fa-file-signature"></i></a>
-                </div>
-                <div class="esTexte">
-                    <div class="boutonTitre">
-                        <a href="#">Contact</a>
-                    </div>
-                    <p>Me retrouver sur les réseaux et me contacter.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="sommaire2">
-        <div class="sommaire2Texte">
-            <h2>Pourquoi le développement web ?</h2>
-            <p>Tout ce qu'il faut savoir sur mon envie de changer de métier, <br>et pourquoi avoir choisi celui-là.</p>
-            <div class="bouton">
-                <a href="presentation.html#titreReconversion">En savoir plus</a>
-            </div>
-        </div>
-        <div class="sommaire2Image">
-            <img src="images/pc.jpg" alt="PC">
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-
     <footer>
-    <section class="footer1">
-        <a href="#">Deskad</a>
-        <a href="#">HasardCombat</a>
-        <a href="#">QuizBok</a>
-    </section>
-    <section class="footer2">
-        <div class="reseaux">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
-            <a href="#"><i class="fab fa-instagram-square"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </section>
-    <section class="footer3">
         <p>2020 Yannick Biheul</p>
-        <p>29000 Quimper</p>
-        <p>yannickbiheul@gmail.com</p>
-        <a href="#">Mentions légales</a>
-    </section>
-</footer>
-    
+    </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

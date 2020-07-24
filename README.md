@@ -40,6 +40,9 @@ Un site pour me présenter en 4 sections :
     * Ajout du menu Burger.
     * Construction du CV.
 
+* **24 Juillet**
+    * Refonte totale du site.
+
 # Outils
 
 * [Google Fonts](https://fonts.google.com/)
