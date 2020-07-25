@@ -104,6 +104,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     background-color: var(--bleu2);
+    z-index: 15;
 }
 
 nav {

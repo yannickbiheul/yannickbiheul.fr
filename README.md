@@ -43,6 +43,9 @@ Un site pour me présenter en 4 sections :
 * **24 Juillet**
     * Refonte totale du site.
 
+* **25 Juillet**
+    * Changement de police du titre.
+
 # Outils
 
 * [Google Fonts](https://fonts.google.com/)
