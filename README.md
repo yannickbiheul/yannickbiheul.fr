@@ -4,12 +4,12 @@ Un site pour me présenter en 4 sections :
 
 * Accueil
 * Présentation
-* Projets
+* Portfolio
 * Contact
 
 # Responsive Design
 
-3 breakpoints en largeur : 600px, 1025px et 1201px.
+FlexBox et media queries => 1200px et 600px.
 
 
 # Langages
@@ -17,7 +17,6 @@ Un site pour me présenter en 4 sections :
 * HTML
 * CSS
 * JavaScript
-* PHP
 
 # Journal 2020
 
@@ -33,7 +32,7 @@ Un site pour me présenter en 4 sections :
     * Initialisation du Footer.
 
 * **01 Juillet**
-    * Initialisation du projet, je recommence tout à zéro.
+    * Ré-initialisation du projet.
 
 * **02 Juillet**
     * Construction de la page Présentation.
@@ -48,6 +47,11 @@ Un site pour me présenter en 4 sections :
 
 # Outils
 
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Google Chrome](https://www.google.fr/chrome/)
+* [Mozilla Firefox](https://www.mozilla.org/fr/firefox/new/)
 * [Google Fonts](https://fonts.google.com/)
 * [Flat Ui Colors](https://flatuicolors.com/)
+* [ResizeImage.net](https://resizeimage.net/)
 * [Animate On Scroll](https://michalsnik.github.io/aos/)
+* [Filezilla](https://filezilla-project.org/)
