@@ -144,7 +144,7 @@ main {
 #accueil>h1 {
     color: #fff;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 4.5em;
     text-shadow: 0 0 20px #000;
     font-family: 'Bangers', cursive;
     letter-spacing: 3px;
@@ -186,6 +186,12 @@ main {
     box-shadow: 3px 3px 4px #000;
 }
 
+/* PRESENTATION */
+
+#presentation {
+    height: 50vh;
+}
+
 /* FOOTER */
 
 footer {
@@ -209,7 +215,7 @@ footer {
     }
 
     #accueil>h1 {
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     #accueil>p {
