@@ -348,19 +348,22 @@ footer {
     }
 
     #presentation {
-        min-height: 100vh;
+        min-height: 200vh;
         flex-direction: column;
+        padding-top: 10px;
     }
 
     .presentation1 {
         width: 100%;
-        min-height: 75%;
+        min-height: 500px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .presentation1-1 {
         align-items: center;
         text-align: center;
-        margin: 20px 0 20px 0;
+        margin: 40px 0 40px 0;
     }
 
     .presentation1-2 {
@@ -370,5 +373,18 @@ footer {
 
     .presentation2 {
         width: 100%;
+        min-height: 500px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .presentation2-1 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .presentation2-2 {
+        align-items: center;
+        text-align: center;
     }
 }
