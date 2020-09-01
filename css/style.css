@@ -11,6 +11,7 @@ html, body {
     --rouge2: #c0392b;
     --cafe: #795548;
     --noir: #2f3542;
+    scroll-behavior: smooth;
 }
 
                                         /* MENU BURGER */
