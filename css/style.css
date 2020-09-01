@@ -9,6 +9,7 @@ html, body {
     --bleu2: #2980b9;
     --rouge1: #e74c3c;
     --rouge2: #c0392b;
+    --cafe: #795548;
 }
 
                                         /* MENU BURGER */
@@ -103,7 +104,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: var(--bleu2);
+    /* background-color: var(--bleu2); */
     z-index: 15;
 }
 
@@ -117,6 +118,7 @@ nav>a {
     text-decoration: none;
     color: #fff;
     margin-right: 40px;
+    text-shadow: 2px 2px 4px #000;
 }
 nav>a:hover {
     text-decoration: underline;
@@ -133,16 +135,26 @@ main {
 #accueil {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(-225deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%), url('../images/fond-route2.jpg');
+    background: linear-gradient(-225deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%), url('../images/odet.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#accueil>h1 {
+.accueil1 {
+    width: 100%;
+    height: 75%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.accueil1>h1 {
     color: #fff;
     text-align: center;
     font-size: 5.5em;
@@ -151,11 +163,22 @@ main {
     letter-spacing: 3px;
 }
 
-#accueil>p {
+.accueil1>p {
     color: #fff;
     text-align: center;
     margin-top: -40px;
     text-shadow: 0 0 10px #000;
+}
+
+.accueil2 {
+    width: 40%;
+    height: 75%;
+    /* border: 1px solid #fff; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .bouton {
@@ -166,20 +189,26 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .bouton>a {
     text-decoration: none;
     color: #fff;
-    background-color: var(--bleu2);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%);
+    border: 1px solid #fff;
     padding: 10px;
     box-shadow: 4px 4px 4px #000;
     border-radius: 5px;
+    width: 75%;
+    text-align: center;
+    transition-duration: 0.5s;
 }
 .bouton>a:hover {
     padding: 12px;
     font-size: 1.1em;
     box-shadow: 5px 5px 4px #000;
+    width: 85%;
 }
 .bouton>a:active {
     padding: 9px;
@@ -190,7 +219,7 @@ main {
                                         /* PRESENTATION */
 
 #presentation {
-    min-height: 50vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,12 +255,13 @@ footer {
         display: none;
     }
 
-    #accueil>h1 {
-        font-size: 3.5em;
+    .accueil1 {
+        align-items: center;
+        width: 100%;
     }
 
-    #accueil>p {
-        margin-top: -30px;
+    .accueil2 {
+        display: none;
     }
 
     #presentation>p {
