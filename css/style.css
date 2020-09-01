@@ -242,7 +242,7 @@ hr {
 .presentation1 {
     width: 40%;
     height: 75%;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,7 +253,7 @@ hr {
 .presentation1-1 {
     width: 90%;
     height: 50%;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,7 +263,7 @@ hr {
 .presentation1-2 {
     width: 90%;
     height: 50%;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -273,7 +273,7 @@ hr {
 .presentation2 {
     width: 40%;
     height: 75%;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -284,7 +284,7 @@ hr {
 .presentation2-1 {
     width: 90%;
     height: 50%;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,7 +301,7 @@ hr {
 .presentation2-2 {
     width: 90%;
     height: 50%;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
