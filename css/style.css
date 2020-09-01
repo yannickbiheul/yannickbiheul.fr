@@ -10,6 +10,7 @@ html, body {
     --rouge1: #e74c3c;
     --rouge2: #c0392b;
     --cafe: #795548;
+    --noir: #2f3542;
 }
 
                                         /* MENU BURGER */
@@ -219,18 +220,99 @@ main {
                                         /* PRESENTATION */
 
 #presentation {
-    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 60px 0 60px 0; */
+    background: radial-gradient(var(--noir), #000);
+}
+
+hr {
+    opacity: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hr2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.presentation1 {
+    width: 40%;
+    height: 75%;
+    border: 1px solid #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 0 60px 0;
+    color: #fff;
 }
 
-#presentation>p {
-    width: 50%;
-    text-align: center;
-    font-size: 1.5em;
+.presentation1-1 {
+    width: 90%;
+    height: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.presentation1-2 {
+    width: 90%;
+    height: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.presentation2 {
+    width: 40%;
+    height: 75%;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.presentation2-1 {
+    width: 90%;
+    height: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.presentation2-1>p>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    margin: 0 10px 0 10px;
+}
+
+.presentation2-2 {
+    width: 90%;
+    height: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.presentation2-2>p>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    margin: 0 10px 0 10px;
 }
 
                                         /* FOOTER */
@@ -264,7 +346,28 @@ footer {
         display: none;
     }
 
-    #presentation>p {
-        width: 90%;
+    #presentation {
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    .presentation1 {
+        width: 100%;
+        min-height: 75%;
+    }
+
+    .presentation1-1 {
+        align-items: center;
+        text-align: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .presentation1-2 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .presentation2 {
+        width: 100%;
     }
 }
