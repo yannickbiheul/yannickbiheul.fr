@@ -205,18 +205,9 @@ main {
     width: 75%;
     text-align: center;
     transition-duration: 0.5s;
+    margin: 0 20px 0 20px;
 }
-.bouton>a:hover {
-    padding: 12px;
-    font-size: 1.1em;
-    box-shadow: 5px 5px 4px #000;
-    width: 85%;
-}
-.bouton>a:active {
-    padding: 9px;
-    font-size: 0.9em;
-    box-shadow: 3px 3px 4px #000;
-}
+
 
                                         /* PRESENTATION */
 
