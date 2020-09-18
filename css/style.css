@@ -34,7 +34,7 @@ html, body {
 .span1 {
     width: 100%;
     height: 4px;
-    background-color: #fff;
+    background-color: #000;
     position: absolute;
     top: 8px;
     transition-duration: 0.5s;
@@ -42,7 +42,7 @@ html, body {
 .span2 {
     width: 100%;
     height: 4px;
-    background-color: #fff;
+    background-color: #000;
     position: absolute;
     top: 18px;
     transition-duration: 0.5s;
@@ -50,7 +50,7 @@ html, body {
 .span3 {
     width: 100%;
     height: 4px;
-    background-color: #fff;
+    background-color: #000;
     position: absolute;
     top: 28px;
     transition-duration: 0.5s;
@@ -119,25 +119,10 @@ header {
     align-items: center;
 }
 
-.initiales {
+.initiales>a>img {
     width: 40px;
     height: 40px;
-    border: 1px solid #000;
-    border-radius: 50%;
     margin-left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(var(--bleu1), var(--bleu2));
-    text-align: center;
-}
-.initiales>a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Ranchers', cursive;
-    font-size: 2em;
-    letter-spacing: -5px;
-    margin-left: -6px;
 }
 
 nav {
@@ -260,7 +245,16 @@ footer {
         display: flex;
     }
 
+    .titreHeader {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
     nav {
+        display: none;
+    }
+
+    .asideHeader {
         display: none;
     }
 
