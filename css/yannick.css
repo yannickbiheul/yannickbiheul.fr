@@ -20,12 +20,14 @@
     color: #fff;
 }
 .titreAccueil>h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-family: var(--ranchers);
     letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000;
 }
 .titreAccueil>p {
     margin-top: -10px;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .boutonCommencer {
