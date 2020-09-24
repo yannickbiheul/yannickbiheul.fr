@@ -1,310 +1,56 @@
-                                        /* GENERAL */
-
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    --bleu1: #3498db;
-    --bleu2: #2980b9;
-    --rouge1: #e74c3c;
-    --rouge2: #c0392b;
-    --cafe: #795548;
-    --noir: #2f3542;
-    scroll-behavior: smooth;
-}
-
-                                        /* MENU BURGER */
-
-.boutonBurger {
-    position: fixed;
-    top: 10px;
-    right: 20px;
-    /* border: 1px solid #fff; */
-    z-index: 25;
-    width: 40px;
-    height: 40px;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.span1 {
-    width: 100%;
-    height: 4px;
-    background-color: #000;
-    position: absolute;
-    top: 8px;
-    transition-duration: 0.5s;
-}
-.span2 {
-    width: 100%;
-    height: 4px;
-    background-color: #000;
-    position: absolute;
-    top: 18px;
-    transition-duration: 0.5s;
-}
-.span3 {
-    width: 100%;
-    height: 4px;
-    background-color: #000;
-    position: absolute;
-    top: 28px;
-    transition-duration: 0.5s;
-}
-
-.span1Open {
-    transform: rotate(-45deg);
-    top: 16px;
-}
-.span2Open {
-    display: none;
-}
-.span3Open {
-    transform: rotate(45deg);
-    top: 16px;
-}
-
-.menuBurger {
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bleu2);
-    z-index: 20;
-    transition-duration: 0.5s;
-}
-.menuBurgerOpen {
-    left: 0;
-}
-
-.menuBurger>a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2em;
-    margin: 20px 0 20px 0;
-}
-.menuBurger>a:hover {
-    text-decoration: underline;
-}
-
-                                        /* HEADER */
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    color: #000;
-    box-shadow: 0 4px 4px #000;
-    z-index: 15;
-}
-
-.titreHeader {
-    width: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.initiales>a>img {
-    width: 40px;
-    height: 40px;
-    margin-left: 20px;
-}
-
-nav {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav>a {
-    text-decoration: none;
-    color: #000;
-    margin-right: 40px;
-    text-shadow: 1px 1px 4px #ccc;
-}
-nav>a:hover {
-    text-decoration: underline;
-}
-
-.asideHeader {
-    width: 20%;
-}
-
-                                        /* MAIN */
-
-main {
-    min-height: 100vh;
-}
-
-                                        /* ACCUEIL */
-
 #accueil {
-    width: 100%;
     height: 100vh;
-    background: linear-gradient(-225deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%), url('../images/odet.jpg');
-    background-size: cover;
-    background-position: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
 }
 
-.accueil1 {
-    width: 100%;
-    height: 75%;
+.eltAccueil {
     /* border: 1px solid #fff; */
-    grid-column-start: 2;
-    grid-row-start: 2;
-    padding: 20px;
-}
-
-.accueil1>h1 {
-    color: #fff;
-    text-align: center;
-    font-size: 5.5em;
-    text-shadow: 0 0 20px #000;
-    font-family: 'Bangers', cursive;
-    letter-spacing: 3px;
-}
-
-.accueil1>p {
-    color: #fff;
-    text-align: center;
-    margin-top: -40px;
-    text-shadow: 0 0 10px #000;
-}
-
-.accueil2 {
-    width: 40%;
-    height: 75%;
-    /* border: 1px solid #fff; */
-    display: none;
+    width: 300px;
+    height: 150px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
-.boutons {
-    width: 100px;
-    height: 50px;
+.titreAccueil {
+    color: #fff;
+}
+.titreAccueil>h1 {
+    font-size: 2.5em;
+    font-family: var(--ranchers);
+    letter-spacing: 2px;
+}
+.titreAccueil>p {
+    margin-top: -10px;
+}
+
+.boutonCommencer {
     /* border: 1px solid #fff; */
+    width: 200px;
+    height: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    cursor: pointer;
 }
 
-.boutons>a {
-    text-decoration: none;
-    color: #fff;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%);
-    border: 1px solid #fff;
+.boutonCommencer>a {
+    /* border: 1px solid #fff; */
     padding: 10px;
-    box-shadow: 4px 4px 4px #000;
     border-radius: 5px;
-    width: 75%;
-    text-align: center;
-    transition-duration: 0.5s;
-    margin: 0 20px 0 20px;
-}
-
-
-                                        /* FOOTER */
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    background-color: var(--bleu2);
+    background-color: var(--blue);
     color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 151, 230, 0.9);
+    animation: pulse 1.3s infinite;
 }
 
-                                        /* RESPONSIVE */
-
-@media screen and (max-width: 1200px) {
-    .boutonBurger {
-        display: flex;
-    }
-
-    .titreHeader {
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .asideHeader {
-        display: none;
-    }
-
-    .accueil1 {
-        align-items: center;
-        width: 100%;
-    }
-
-    .accueil2 {
-        display: none;
-    }
-
-    #presentation {
-        min-height: 200vh;
-        flex-direction: column;
-        padding-top: 10px;
-    }
-
-    .presentation1 {
-        width: 100%;
-        min-height: 500px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    .presentation1-1 {
-        align-items: center;
-        text-align: center;
-        margin: 40px 0 40px 0;
-    }
-
-    .presentation1-2 {
-        align-items: center;
-        text-align: center;
-    }
-
-    .presentation2 {
-        width: 100%;
-        min-height: 500px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    .presentation2-1 {
-        align-items: center;
-        text-align: center;
-    }
-
-    .presentation2-2 {
-        align-items: center;
-        text-align: center;
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 18px rgba(0, 151, 230, 0.01);
     }
 }

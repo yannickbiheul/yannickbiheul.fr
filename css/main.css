@@ -34,11 +34,11 @@ html, body {
     --black: #2f3640;
     --black2: #353b48;
     /* BACKGROUND */
-    --bc: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
+    --bc: linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%);
 }
 
 main {
-    background: var(--bc), var(--pico);
+    background: var(--bc), url("../images/odet.jpg");
     background-size: cover;
     background-position: center;
     width: 100vw;
