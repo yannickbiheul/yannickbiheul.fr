@@ -7,9 +7,9 @@ Un site pour me présenter en 4 sections :
 * Portfolio
 * Contact
 
-# Responsive Design
+# Responsive Web Design
 
-FlexBox et media queries => 1200px et 600px.
+Mobile First, Grid et FlexBox.
 
 
 # Langages
@@ -44,6 +44,9 @@ FlexBox et media queries => 1200px et 600px.
 
 * **25 Juillet**
     * Changement de police du titre.
+
+* **24 Septembre**
+    * Remise à zéro du site.
 
 # Outils
 
