@@ -110,6 +110,7 @@ main {
     height: 100vh;
     background: var(--bc), url("../images/ciel.jpg");
     background-size: cover;
+    background-position: center;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -130,3 +131,22 @@ main {
     margin: 10px 0 10px 0;
 }
 
+
+
+@media screen and (max-height: 640px) {
+    #accueil {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .vide {
+        display: none;
+    }
+
+    .titreAccueil {
+        grid-row-start: 1;
+    }
+
+    .boutonAccueil {
+        grid-row-start: 2;
+    }
+}
