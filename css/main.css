@@ -132,28 +132,3 @@ main {
 }
 
 
-
-@media screen and (max-height: 360px) {
-    .menuBurger>a {
-        font-size: 1.5em;
-    }
-    
-    #accueil {
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .vide {
-        display: none;
-    }
-
-    .titreAccueil {
-        grid-row-start: 1;
-    }
-    .titreAccueil>h1 {
-        margin-top: 120px;
-    }
-
-    .boutonAccueil {
-        grid-row-start: 2;
-    }
-}
