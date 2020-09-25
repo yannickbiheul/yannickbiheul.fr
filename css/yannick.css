@@ -9,7 +9,7 @@
 }
 
 .eltAccueil {
-    /* border: 1px solid #fff; */
+    border: 1px solid #fff;
     width: 300px;
     height: 150px;
     display: flex;
@@ -61,6 +61,7 @@
 
                                                             /* RESPONSIVE */
 
+/* ORIENTATION PAYSAGE */
 @media screen and (max-height: 360px) {
     .menuBurger>a {
         font-size: 1.5em;
@@ -83,5 +84,23 @@
 
     .boutonAccueil {
         grid-row-start: 2;
+    }
+}
+
+/* >1200px */
+@media screen and (min-width: 1200px) {
+    #accueil {
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify_items: center;
+    }
+
+    .eltAccueil {
+        width: 85vw;
+        height: 250px;
+    }
+
+    .titreAccueil>h1 {
+        font-size: 5em;
     }
 }
