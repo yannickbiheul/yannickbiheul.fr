@@ -1,3 +1,10 @@
+// LOADER
+const loader = document.querySelector(".loader");
+
+window.addEventListener("load", function () {
+    loader.classList.add("fondu-out");
+})
+
 // MENU BURGER
 let boutonBurger = document.querySelector(".boutonBurger");
 let menuBurger = document.querySelector(".menuBurger");
