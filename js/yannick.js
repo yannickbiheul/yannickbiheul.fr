@@ -1,9 +1,4 @@
-// LOADER
-const loader = document.querySelector(".loader");
 
-window.addEventListener("load", function () {
-    loader.classList.add("fondu-out");
-})
 
 // MENU BURGER
 let boutonBurger = document.querySelector(".boutonBurger");
@@ -24,3 +19,12 @@ boutonBurger.addEventListener("click", ouvrirMenu);
 for (let i = 0; i < elts.length; i++) {
     elts[i].addEventListener("click", ouvrirMenu);
 }
+
+// LOADER
+const loader = document.querySelector(".loader");
+boutonBurger.style.opacity = "0";
+
+window.addEventListener("load", function () {
+    loader.classList.add("fondu-out");
+    boutonBurger.style.opacity = "1";
+})

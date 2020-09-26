@@ -1,13 +1,11 @@
 /* <link rel="stylesheet" href="css/main.css"> */
-*, ::before, ::after {
-    box-sizing: border-box;
+html, body {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: var(--roboto);
     overflow: hidden;
+    box-sizing: border-box;
+    min-height: 100vh;
 }
 
 :root {
@@ -42,7 +40,7 @@ body {
 }
 
 main {
-    background: var(--bc), url("../images/odet_mobile.jpg");
+    background: var(--bc), url("../images/bubulles19.jpg");
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -58,8 +56,10 @@ main {
 
 .loader {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #000;
     display: flex;
     justify-content: center;
@@ -68,7 +68,7 @@ main {
 
 .lettre {
     color: #484848;
-    font-size: 80px;
+    font-size: 1.3em;
     letter-spacing: 15px;
     margin-bottom: 150px;
     animation: flash 1.2s linear infinite;
