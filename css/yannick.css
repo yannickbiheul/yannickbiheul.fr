@@ -1,105 +1,91 @@
-                                                            /* ACCUEIL */
+                                                            /* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 16px Roboto;
+    color: #555;
+}
+
+ul, nav {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover {
+    opacity: 1;
+}
+
+:root {
+    /* FONTS */
+    --roboto: 'Roboto', sans-serif;     /* <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> */
+    --quicksand: 'Quicksand', sans-serif;   /* <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    /* COLORS (https://flatuicolors.com/palette/gb) */
+    --blue: #0097e6;
+    --green: #44bd32;
+    --red: #c23616;
+    /* BACKGROUND */
+    --bc: linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%);
+}
+
+                                                            /* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0;
+}
+
+header h2 {
+    font-family: var(--quicksand);
+    color: #f1f1f1;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+    color: #f1f1f1;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    header h2 {
+        margin-bottom: 15px;
+    }
+}
+
+/* ACCUEIL */
 
 #accueil {
+    width: 100%;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 5px;
-}
-
-.eltAccueil {
-    /* border: 1px solid #fff; */
-    width: 300px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.titreAccueil {
-    color: #fff;
-}
-.titreAccueil>h1 {
-    font-size: 2.8em;
-    font-family: var(--ranchers);
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px #000;
-}
-.titreAccueil>p {
-    margin-top: -10px;
-    text-shadow: 2px 2px 4px #000;
-}
-
-.boutonCommencer {
-    /* border: 1px solid #fff; */
-    width: 200px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.boutonCommencer>a {
-    /* border: 1px solid #fff; */
-    padding: 10px;
-    border-radius: 5px;
-    background-color: var(--blue);
-    color: #fff;
-    text-decoration: none;
-    box-shadow: 0 0 0 0 rgba(0, 151, 230, 0.9);
-    animation: pulse 1.3s infinite;
-}
-
-@keyframes pulse {
-    to {
-        box-shadow: 0 0 0 18px rgba(0, 151, 230, 0.01);
-    }
-}
-
-                                                            /* RESPONSIVE */
-
-/* ORIENTATION PAYSAGE */
-@media screen and (max-height: 360px) {
-    .menuBurger>a {
-        font-size: 1.5em;
-    }
-    
-    #accueil {
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .vide {
-        display: none;
-    }
-
-    .titreAccueil {
-        grid-row-start: 1;
-    }
-    .titreAccueil>h1 {
-        margin-top: 120px;
-    }
-
-    .boutonAccueil {
-        grid-row-start: 2;
-    }
-}
-
-/* >1200px */
-@media screen and (min-width: 1200px) {
-    #accueil {
-        grid-template-rows: repeat(2, 1fr);
-        align-items: center;
-    }
-
-    .eltAccueil {
-        width: 85vw;
-        height: 250px;
-    }
-
-    .titreAccueil>h1 {
-        font-size: 5em;
-    }
+    background: var(--bc), url(../images/bubulles13.jpg);
+    background-size: cover;
+    background-position: center;
 }

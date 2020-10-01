@@ -1,0 +1,82 @@
+/* MENU BURGER */
+
+.boutonBurger {
+    /* border: 1px solid #fff; */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.span1 {
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition-duration: 0.5s;
+}
+
+.span1Open {
+    transform: rotate(-45deg);
+    top: 18px;
+}
+
+.span2 {
+    position: absolute;
+    top: 18px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition-duration: 0.5s;
+}
+
+.span2Open {
+    opacity: 0;
+}
+
+.span3 {
+    position: absolute;
+    top: 28px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition-duration: 0.5s;
+}
+
+.span3Open {
+    transform: rotate(45deg);
+    top: 18px;
+}
+
+.menuBurger {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bc), url("../images/ciel.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    font-family: var(--roboto);
+}
+
+.menuBurgerOpen {
+    left: 0;
+}
+
+.menuBurger>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    margin: 10px 0 10px 0;
+}
