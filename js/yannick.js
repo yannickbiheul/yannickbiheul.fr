@@ -10,22 +10,9 @@ window.onscroll = function() {
     }
 }
 
-// MENU BURGER
-// let boutonBurger = document.querySelector(".boutonBurger");
-// let menuBurger = document.querySelector(".menuBurger");
-// let elts = document.querySelectorAll(".elt");
 
-// function ouvrirMenu() {
-//     menuBurger.classList.toggle("menuBurgerOpen");
-//     span1.classList.toggle("span1Open");
-//     span2.classList.toggle("span2Open");
-//     span3.classList.toggle("span3Open");
-// }
-// boutonBurger.addEventListener("click", ouvrirMenu);
 
-// for (let i = 0; i < elts.length; i++) {
-//     elts[i].addEventListener("click", ouvrirMenu);
-// }
+
 
 // LOADER
 
@@ -37,3 +24,22 @@ window.onscroll = function() {
 //     boutonBurger.style.opacity = "1";
 // })
 
+
+// PANNEAU
+
+const lienPanneau = document.querySelector(".lienPanneau");
+const boutonPanneau = document.querySelector("#boutonPanneau");
+const panneau = document.querySelector(".panneau");
+
+function ouvrirPanneau(e) {
+    e.preventDefault();
+    panneau.classList.toggle("panneauOpen");
+}
+
+function fermerPanneau(e) {
+    e.preventDefault();
+    panneau.classList.toggle("panneauOpen");
+}
+
+lienPanneau.addEventListener("click", ouvrirPanneau);
+boutonPanneau.addEventListener("click", fermerPanneau);

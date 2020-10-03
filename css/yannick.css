@@ -82,12 +82,7 @@ nav li {
         display: flex;
     }
     header {
-        position: absolute;
-        top: 0;
-    }
-
-    header h2 {
-        left: 10px;
+        display: none;
     }
 
     nav {
@@ -188,6 +183,39 @@ nav li {
 
 #portfolio {
     min-height: 100vh;
+    position: relative;
+}
+
+.panneau {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid var(--red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.5s;
+    z-index: 10;
+}
+
+.panneauOpen {
+    left: 50%;
+}
+
+.panneau a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--green);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 #portfolio h2 {
@@ -268,5 +296,10 @@ nav li {
     }
     .carte-portfolio {
         grid-column-start: 2;
+    }
+
+    .panneau {
+        width: 95%;
+        top: 90%;
     }
 }

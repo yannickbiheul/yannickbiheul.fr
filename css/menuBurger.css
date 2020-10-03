@@ -87,6 +87,12 @@
     left: 0;
 }
 
+.menuBurger h2 {
+    color: #fff;
+    font-size: 2em;
+    margin: 10px 0 40px 0;
+}
+
 .menuBurger>a {
     text-decoration: none;
     color: #fff;
