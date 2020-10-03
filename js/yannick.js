@@ -1,4 +1,14 @@
+// HEADER 
 
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 800) {
+        document.querySelector("header").style.backgroundColor = "#000";
+        document.querySelector("header").style.padding = "25px 75px";
+    } else {
+        document.querySelector("header").style.backgroundColor = "transparent";
+        document.querySelector("header").style.padding = "35px 75px";
+    }
+}
 
 // MENU BURGER
 let boutonBurger = document.querySelector(".boutonBurger");
@@ -28,3 +38,4 @@ window.addEventListener("load", function () {
     loader.classList.add("fondu-out");
     boutonBurger.style.opacity = "1";
 })
+
