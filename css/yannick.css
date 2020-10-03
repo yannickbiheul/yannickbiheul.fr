@@ -34,6 +34,7 @@ a:hover {
     --blue: #0097e6;
     --green: #44bd32;
     --red: #c23616;
+    --black: #170503;
     /* BACKGROUND */
     --bc: linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%);
 }
@@ -178,6 +179,87 @@ nav li {
         font-size: 1em;
     }
 }
+
+/* PRESENTATION */
+
+#presentation {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bloc-fondu {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 90px 0 100px 100px #fff;
+}
+
+.bloc-background {
+    background-image: url(../images/pc.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 100%;
+}
+
+#presentation h2 {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    margin-left: 10vw;
+}
+
+.bloc-fondu p {
+    font-size: 18px;
+    text-align: justify;
+    width: 600px;
+    margin-left: 10vw;
+}
+
+.reseaux {
+    display: flex;
+    position: relative;
+    left: 10vw;
+    padding-top: 20px;
+}
+
+.reseaux a {
+    font-size: 2.4em;
+    color: var(--black);
+    margin: 0 10px 0 0;
+}
+
+.boutons-presentation {
+    /* border: 1px solid #000; */
+    width: 65%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 40px;
+    position: relative;
+    left: 10vw;
+}
+
+.boutons-presentation a {
+    font-size: 18px;
+    margin: 0 20px 0 0;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid #333;
+    width: 150px;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+}
+
 
                                                             /* PORTFOLIO */
 
