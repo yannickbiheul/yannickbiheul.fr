@@ -78,11 +78,18 @@ nav li {
 }
 
 @media screen and (max-width: 600px) {
-    header {
-        flex-direction: row;
-        justify-content: flex-start;
-        padding: 15px 20px;
+    .boutonBurger {
+        display: flex;
     }
+    header {
+        position: absolute;
+        top: 0;
+    }
+
+    header h2 {
+        left: 10px;
+    }
+
     nav {
         display: none;
     }
@@ -210,6 +217,7 @@ nav li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 0 0 40px 0;
 }
 
 .carte-portfolio img {
@@ -248,4 +256,17 @@ nav li {
     justify-content: center;
     align-items: center;
     color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    .container-portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+    }
+    .carte-portfolio {
+        grid-column-start: 2;
+    }
 }

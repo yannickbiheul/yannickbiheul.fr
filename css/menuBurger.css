@@ -1,55 +1,68 @@
 /* MENU BURGER */
 
 .boutonBurger {
-    /* border: 1px solid #fff; */
+    border: 1px solid #ccc;
     position: fixed;
     top: 20px;
     right: 20px;
     width: 40px;
     height: 40px;
     cursor: pointer;
-    z-index: 3;
+    z-index: 50;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #000;
+    background-color: #f1f1f1;
+    display: none;
 }
 
-.span1 {
+.ligne {
+    width: 65%;
+    height: 4px;
+    border-radius: 5px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0ms 300ms;
+}
+
+.ligne::before {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    background: #000;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    transition: bottom 300ms 300ms ease, transform 300ms ease;
+}
+
+.ligne::after {
+    content: "";
     position: absolute;
     top: 8px;
+    background: #000;
     width: 100%;
     height: 4px;
-    background-color: #fff;
-    transition-duration: 0.5s;
+    border-radius: 5px;
+    transition: top 300ms 300ms ease, transform 300ms ease;
 }
 
-.span1Open {
-    transform: rotate(-45deg);
-    top: 18px;
-}
-
-.span2 {
-    position: absolute;
-    top: 18px;
-    width: 100%;
-    height: 4px;
-    background-color: #fff;
-    transition-duration: 0.5s;
-}
-
-.span2Open {
-    opacity: 0;
-}
-
-.span3 {
-    position: absolute;
-    top: 28px;
-    width: 100%;
-    height: 4px;
-    background-color: #fff;
-    transition-duration: 0.5s;
-}
-
-.span3Open {
+.boutonBurger.active .ligne::after {
+    top: 0;
     transform: rotate(45deg);
-    top: 18px;
+    transition: top 300ms ease, transform 300ms 300ms ease;
+}
+
+.boutonBurger.active .ligne {
+    background: transparent;
+}
+
+.boutonBurger.active .ligne::before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms ease, transform 300ms 300ms ease;
 }
 
 .menuBurger {
@@ -61,7 +74,7 @@
     background: var(--bc), url("../images/ciel.jpg");
     background-size: cover;
     background-position: center;
-    z-index: 2;
+    z-index: 45;
     display: flex;
     flex-direction: column;
     justify-content: center;
